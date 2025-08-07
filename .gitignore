@@ -398,3 +398,7 @@ FodyWeavers.xsd
 *.sln.iml
 .env
 venv/
+
+# App-generated audio artifacts
+*.flac
+tts_*.flac

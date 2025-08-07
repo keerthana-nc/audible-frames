@@ -67,3 +67,37 @@ Integrating with wearable devices like smart glasses for real-time feedback.
 Enhancing performance for low-end devices with optimized models.
 
 Audible Frames aims to bridge the accessibility gap for the visually impaired, making the world more inclusive and navigable through AI-driven assistive technology.
+
+## Setup
+
+- Ensure you have Python 3.10+ installed.
+- Create and populate a `.env` file based on `.env.example`.
+- Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Environment variables
+
+Create a `.env` file in the project root with the following keys:
+
+```
+OPENAI_API_KEY=your_openai_key
+HUGGINGFACE_API_TOKEN=your_hf_token
+```
+
+## Run locally
+
+```bash
+streamlit run app.py
+```
+
+Upload a JPG/PNG image. Optionally enable short-story generation in the sidebar. The app will speak either the description or the story and let you download the audio.
+
+## Notes on licensing and attribution
+
+This project is licensed under GPL-3.0 (`LICENSE`). If you create a derivative or redistribute the app:
+- Keep the `LICENSE` file and existing copyright notices.
+- Disclose your changes and license your derivative under GPL-3.0.
+- Provide the full corresponding source when distributing binaries or hosted services, as required by GPL.
